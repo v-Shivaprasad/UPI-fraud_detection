@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UPI Fraud Detection</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-800 text-white font-sans">
+
+  <!-- Hero Section -->
+  <section class="py-20 text-center px-6">
+    <h1 class="text-5xl md:text-6xl font-extrabold mb-4">
+      UPI Fraud Detection 🔐
+    </h1>
+    <p class="text-lg md:text-xl max-w-2xl mx-auto opacity-90">
+      AI-powered system to analyze UPI transactions and predict fraudulent activity in real-time.
+    </p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6">
+    <div class="max-w-4xl mx-auto bg-white/10 backdrop-blur-lg border border-white/20 p-8 rounded-2xl">
+      <h2 class="text-3xl font-bold mb-6 text-center">Why We Built This App</h2>
+      <p class="mb-4 leading-relaxed text-lg">
+        UPI has transformed payments in India, but with convenience comes risk. 
+        Fraudsters exploit vulnerabilities through scams, phishing, and unauthorized access. 
+        Our mission is to create a <span class="font-semibold text-emerald-400">smart fraud detection system</span> 
+        to help banks, apps, and users stay safe.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">How It Works 🚀</h2>
+      <ul class="list-disc pl-6 space-y-2 text-lg">
+        <li>Analyzes your transaction history.</li>
+        <li>Detects unusual patterns like sudden location or device changes.</li>
+        <li>Uses Machine Learning to calculate a fraud probability score instantly.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Why It Matters 🔐</h2>
+      <p class="text-lg leading-relaxed">
+        Digital trust is the backbone of financial systems. Our app acts as a 
+        <span class="font-semibold text-indigo-300">guardian for your UPI payments</span>, 
+        ensuring safe digital transactions and preventing fraud.
+      </p>
+    </div>
+  </section>
+
+  <!-- Upload Section -->
+  <section class="py-20 flex flex-col items-center justify-center text-center px-6">
+    <form action="/predict" method="POST" enctype="multipart/form-data" 
+          class="bg-white/10 backdrop-blur-lg border border-white/20 text-white p-6 rounded-2xl shadow-xl w-full max-w-md">
+      <h2 class="text-2xl font-bold mb-4">Upload Transactions CSV</h2>
+      <input type="file" name="file" accept=".csv" required
+             class="w-full border border-gray-300 text-black p-2 rounded mb-4 bg-white">
+      <button type="submit"
+              class="w-full bg-emerald-500 text-white py-2 rounded-lg hover:bg-emerald-600 transition font-semibold">
+        Analyze Now
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-indigo-900 text-white mt-10">
+    <p>&copy; 2025 UPI Fraud Detection | Securing Digital Payments</p>
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('h1, h2, p, ul, li, a, form', {
+      delay: 200,
+      duration: 1000,
+      origin: 'bottom',
+      distance: '50px',
+      interval: 100
+    });
+  </script>
+</body>
+</html>
